@@ -1,0 +1,8 @@
+---
+title: "Cookstove_Project"
+author: "Josiah Kephart, Anton Kvit"
+date: "December 16, 2016"
+output: html_document
+---
+
+This is a Shiny app that helps track home stove usage in Peru. 
