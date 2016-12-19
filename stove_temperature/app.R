@@ -6,12 +6,9 @@ library(dplyr)
 
 
 ### code to upload the app to the server
+# link to the biostats server
 
-library(rsconnect)
-
-
-
-rsconnect::showLogs()
+#https://jhubiostatistics.shinyapps.io/stove_temperature/
 
 ## the Cook Stove app ##
 ui <- dashboardPage(
@@ -60,7 +57,7 @@ server <- function(input, output){
       # User has not uploaded a file yet
       return(NULL)
     }
-    read.csv(infile$datapath)
+    read.csv(infile$datapath, stringsAsFactors=FALSE, fileEncoding="latin1")
   })
   
   
